@@ -276,12 +276,6 @@ require('lazy').setup({
   -- Terminal Toggler
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
 
-  -- fugative
-  {
-    'tpope/vim-fugitive',
-    cmd = { 'Git', 'Gstatus', 'Gblame', 'Gdiffsplit' },
-  },
-
   --
   -- See `:help gitsigns` to understand what the configuration keys do
   { -- Adds git related signs to the gutter, as well as utilities for managing changes
