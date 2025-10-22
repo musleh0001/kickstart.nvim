@@ -182,8 +182,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 --
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=horizontal<CR>', { desc = 'Toggle horizontal terminal' })
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+vim.keymap.set('n', '<leader>v', ':ToggleTerm<CR>', { desc = 'Toggle Terminal' })
+vim.keymap.set('t', '<leader>v', [[<C-\><C-n>:ToggleTerm<CR>]], { desc = 'Toggle Terminal' })
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Terminal Normal Mode' })
 
 -- Neo-Tree
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle file explorer' })
