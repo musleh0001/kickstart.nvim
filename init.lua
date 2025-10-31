@@ -274,6 +274,12 @@ require('lazy').setup({
   --
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`.
+  {
+    'supermaven-inc/supermaven-nvim',
+    config = function()
+      require('supermaven-nvim').setup {}
+    end,
+  },
   -- Terminal Toggler
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
 
